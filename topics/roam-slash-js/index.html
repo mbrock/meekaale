@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><meta charset="utf-8"><link href="/index.css" rel="stylesheet"><title>@meekaale roam/js</title><header><a href="/">@meekaale</a> » <a href="/topics/">Topic</a> » <strong>roam/js</strong></header><article><section><h1>roam/js</h1><p>{{<a class="ref ns" href="/topics/roam-slash-js">roam/js</a>}}</p><div class="indent"><p>Here's a function I used to move all my Readwise pages from like "After Virtue" to "books/After Virtue".</p><div class="indent"><p>```javascript
+<html><meta charset="utf-8"><meta content="width=device-width, initial-scale=1" name="viewport"><link href="/index.css" rel="stylesheet"><meta content="summary" name="twitter:card"><meta content="@meekaale" name="twitter:site"><title>roam/js - @meekaale</title><header><a href="/">@meekaale</a> » <a href="/topics/">Topic</a> » roam/js</header><article><section><h2>roam/js</h2><p>{{<a class="ref ns" href="/topics/roam-slash-js">roam/js</a>}}</p><div class="indent"><p>Here's a function I used to move all my Readwise pages from like "After Virtue" to "books/After Virtue".</p><div class="indent"><p>```javascript
 function moveCategoryToNamespace (categoryName) {
   for (let [x] of window.roamAlphaAPI.q(`[
     :find (pull ?x [{:block/page [:block/uid :node/title]}])
@@ -22,7 +22,7 @@ function moveCategoryToNamespace (categoryName) {
       page: { uid: page.uid, title: `${categoryName}/${page.title}` }
     })
   }
-}```</p><div class="indent"></div></div><p>```javascript
+}```</p></div><p>```javascript
 function findBlocksToQuote (categoryName) {
   let xs = window.roamAlphaAPI.q(`[
     :find (pull ?y [*])
@@ -50,4 +50,4 @@ function findBlocksToQuote (categoryName) {
     if (i == 299) break
     roamAlphaAPI.updateBlock({ block: { uid: x.uid, string: `> ${x.string}` }})
   }
-}```</p><div class="indent"></div></div></section><section><h2>References</h2><ul><li><div class="linkref"><h3><a href="/topics/roam-slash-js">roam/js</a></h3><div><p>{{<a class="ref ns" href="/topics/roam-slash-js">roam/js</a>}}</p></div></div></li></ul></section></article></html>
+}```</p></div></section><section class="mt-2"><h2>References</h2><ul><li><div class="linkref"><h3><a href="/topics/roam-slash-js">roam/js</a></h3><div><p>{{<a class="ref ns" href="/topics/roam-slash-js">roam/js</a>}}</p></div></div></li></ul></section></article></html>
