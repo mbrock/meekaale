@@ -15,6 +15,7 @@ header {
   background: #eeda;
   margin-bottom: 2em;
   justify-content: center;
+  border-bottom: 2px solid #5534;
 }
 
 article:not(.wide) {
@@ -111,13 +112,12 @@ p .ref:not(.ns) {
 blockquote {
   /* font: 14px/22px var(--serif); */
   font-family: var(--serif);
-  /* background: #F5F8FA; */
+  background: #ffeeb010;
   color: #444;
   padding: 0.5em 1em;
-  border-left: 4px solid #0002;
 
-  /* border: 1px solid #0002; */
-  /* border-width: 1px 1px 1px 4px; */
+  border: 1px solid #4402;
+  border-width: 1px 1px 1px 6px;
 
   /* text-align: justify; */
   margin: 1em 1em 0 0;
