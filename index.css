@@ -208,6 +208,9 @@ td, .mentions-list a {
   max-width: 25em;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.mentions-list a {
   display: inline-block;
 }
 
