@@ -1,0 +1,252 @@
+body {
+  --sans-serif: "helvetica neue", helvetica, sans-serif;
+  --serif: "original garamond tl", georgia, "times new roman", times, serif;
+
+  --semibold: 600;
+
+  font: 16px/24px var(--sans-serif);
+  color: #222;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  padding: .25em .5em;
+  background: #eeda;
+  margin-bottom: 2em;
+  justify-content: center;
+  border-bottom: 2px solid #5534;
+}
+
+.page {
+  margin: 2em auto;
+  padding: 0 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.page > section {
+  max-width: 36em;
+}
+
+.article-list {
+  max-width: 42em;
+  margin: 0 auto;
+}
+
+section.references { max-width: 30em; }
+
+article.wide {
+  margin: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+a { text-decoration: none; }
+
+h1, h2, h3 {
+  font-size: inherit;
+  line-height: 1.5rem;
+  margin: 0;
+}
+
+h1 {
+  font-size: 18px;
+  letter-spacing: -0.03em;
+  margin-top: .75rem;
+  margin-bottom: .75rem;
+}
+
+h2 {
+  font-size: 20px;
+  letter-spacing: -0.03em;
+  margin-top: .75rem;
+  margin-bottom: .75rem;
+}
+
+.article-list h2 {
+  font: inherit;
+  margin: 0;
+}
+
+/* article h1, article h2, article h3 { */
+/*   margin-bottom: .5em; */
+/* } */
+
+/* h3 { */
+/*   margin-top: 1em; */
+/* } */
+
+h2, h3 {
+  font-weight: var(--semibold);
+}
+
+article h3 {
+  margin-top: 2.25rem;
+  margin-bottom: .75rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+article {
+  margin-bottom: 4em;
+}
+
+ul, li {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.hide { display: none; }
+
+p .ref:not(.ns) {
+  /* font-variant: small-caps; */
+  /* text-transform: uppercase; */
+  font-weight: normal;
+  /* font-size: 80%; */
+  letter-spacing: -0.02em;
+}
+
+.ref.ns {
+  font-size: 90%;
+}
+
+.ref {
+  font-family: var(--sans-serif);
+  text-decoration: none;
+}
+
+/* p { */
+/*   text-align: justify; */
+/* } */
+
+blockquote:not(.blockref) {
+  font-family: var(--serif);
+  background: #ffeeb010;
+  color: #444;
+  padding: 0.5em 1em;
+
+  border: 1px solid #4402;
+  border-width: 1px 1px 1px 6px;
+
+  margin: 1em 1em 0 0;
+  white-space: pre-line;
+}
+
+blockquote.blockref {
+  display: block;
+  border: 1px solid #ccc;
+  border-width: 1px 1px 1px 4px;
+  padding: .5em 1em;
+  color: inherit;
+  font-size: 80%;
+  line-height: 20px;
+  margin: 1em 1em 0 0;
+}
+
+a.cite {
+  text-decoration: none;
+  display: inline-block;
+  transform: translateX(.25em) translateY(.25em) scale(1.5);
+}
+
+.semibold, strong {
+  font-weight: var(--semibold);
+}
+
+p, div.indent {
+  margin-top: .8rem;
+  margin-bottom: 0;
+}
+
+div.indent { margin-left: 1em; }
+h2 + div.indent { margin-top: 0; margin-left: 0; }
+
+h3 + p { margin-top: 0; }
+
+p:first-child { margin-top: 0; }
+p:last-child { margin-bottom: 0; }
+
+.linkref > div > * {
+  border: 1px solid #ccc;
+  background: #fdfdfd;
+  padding: .5em 1em;
+}
+
+.nop p {
+  margin: 0;
+}
+
+table.daily-notes td:first-child {
+  text-align: right;
+  padding-right: 1em;
+}
+
+iframe { width: 100%; }
+
+.date { opacity: 0.8; }
+
+.small {
+  font-size: 80%;
+  line-height: 20px;
+}
+
+.ml-1 { margin-left: 1em; }
+.mb-1 { margin-bottom: 1em; }
+
+.mt-1 { margin-top: 1em; }
+.mt-2 { margin-top: 2em; }
+
+.flex { display: flex; }
+.wrap { flex-wrap: wrap; }
+.column { flex-direction: column; }
+
+.gap-t1 > * { margin-top: 1em; }
+.gap-r1 > * { margin-right: 1em; }
+
+td, .mentions-list a {
+  text-overflow: ellipsis;
+  max-width: 25em;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.Summary {
+  opacity: 0.8;
+  font-style: italic;
+}
+
+a.xlink { border-bottom: 1px solid currentcolor; }
+
+:target {
+  background: #ff04;
+}
+
+:target:not(blockquote) {
+  padding: .25em .5em;
+}
+
+.box {
+  border: 1px solid #ccc;
+  background: #fafafa;
+  border-radius: 6px;
+  padding: .25rem .5rem;
+}
+
+header > :first-child { font-weight: bold; }
+
+.references h3 { margin: 0 0 0.5em 0; }
+.references li { margin-bottom: 1em; }
