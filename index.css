@@ -28,6 +28,7 @@ header {
 
 .page > section {
   max-width: 36em;
+  margin-bottom: 6em;
 }
 
 .article-list {
@@ -68,7 +69,7 @@ h2 {
 
 .article-list h2 {
   font: inherit;
-  margin: 0;
+  margin: .25em 0;
 }
 
 /* article h1, article h2, article h3 { */
