@@ -30,6 +30,11 @@ header {
   max-width: 36em;
 }
 
+.article-list {
+  max-width: 42em;
+  margin: 0 auto;
+}
+
 section.references { max-width: 30em; }
 
 article.wide {
